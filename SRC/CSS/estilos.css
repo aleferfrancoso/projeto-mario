@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins';
+}
+
+.cabecalho {
+    background-color: none; /*cor de fundo */
+    display: flex; /*deixa os elementos ao lado um do outro */
+    justify-content: space-between; /*faz um espaco entre os elementos*/
+    padding: 30px; /*espacamento do conteudo*/
+    margin: 0 auto;
+    max-width: 1440px; /*define o tamanho maximo da largura*/
+}
+
+.cabecalho .logo {
+    width: 65px; /*Largura*/
+}
+.cabecalho .menu {
+    display: flex;
+    align-items: center; /*alinha os elementos no espaco total, no caso centro*/
+    height: 100%; /*altura*/
+}
+
+.cabecalho nav li a {
+    font-weight: bold; /*Mexer na fonte no caso grossura*/
+    color: rgb(255, 255, 255);
+    font-size: 25px; /*Tamanho da fonte*/
+    padding: 10px 20px; /*espacamento do conteudo*/
+    border-radius: 50px; /*raio da borda, deixar elas arredondadas*/
+    transition: 0.2s; /*tempo de transicao para a animacao*/
+} 
+
+.cabecalho nav li a:hover /*houver seria quando alguem passa o mouse em cima*/{ 
+    background-color: #d5011d;
+}
+
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 132px); /*calc ele consegue fazer a altura menos outra que voce seleciona*/
+    padding: 0 30px 30px;
+}
+
+.container .logo-mario {
+    max-width: 500px;
+    margin: 10px;
+}
+
+.container .informacoes {
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.container button {
+    background-color: #ff0021;
+    color: #ffffff;
+    margin: 15px 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    transition: 0.5s all ease-in-out;
+}
+
+.container button:hover {
+    transform: scale(1.1);
+}
+
+.fundo-video {
+    position: absolute; /*ele posiciona o elemento idependente dos outros*/
+    z-index: -1; /*posicionar o elemento para tras*/
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden; /*esconde o transbordamento do elemento evita o scroll*/
+    display: flex;
+    justify-content: center;
+}
+
+.fundo-video .video {
+    height: 100vh;
+    
+}
+
+.fundo-video::after {
+    content: "";
+    background: linear-gradient(90deg, #040203 0%, rgba(0, 0, 0, 0.85) 49%, #040203 100%);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    height: 0;
+    background-color: rgba(52, 52, 50, 0.749);
+    visibility: hidden;
+}
+
+.modal .conteudo-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 5px;
+    gap: 15px;
+}
+
+.modal .fechar-modal {
+    background-color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.modol iframe {
+    border-width: 0;
+    width: 640px;
+    height: 360px;
+}
+
+.modal.aberto {
+    opacity: 1;
+    visibility: visible;
+}
+
+.container button {
+    border-radius: 50px;
+}

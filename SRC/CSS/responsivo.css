@@ -1,0 +1,43 @@
+@media (max-width:1200px) {
+    body {
+        background-color: #f44336;
+    }
+
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .container .logo-mario {
+        max-width: 70%;
+    }
+    
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .container .informacoes p {
+        text-align: center;
+    }
+
+    .container .mario {
+        max-width: 50%;
+    }
+
+    .modal .fechar-modal {
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video {
+        width: 350px;
+        height: 169px;
+    }
+}
