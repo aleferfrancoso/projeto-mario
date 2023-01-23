@@ -3,12 +3,12 @@ body {
 }
 
 .cabecalho {
-    background-color: none; /*cor de fundo */
-    display: flex; /*deixa os elementos ao lado um do outro */
-    justify-content: space-between; /*faz um espaco entre os elementos*/
-    padding: 30px; /*espacamento do conteudo*/
+    background-color: none; 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 30px; 
     margin: 0 auto;
-    max-width: 1440px; /*define o tamanho maximo da largura*/
+    max-width: 1440px; 
 }
 
 .cabecalho .logo {
@@ -16,20 +16,20 @@ body {
 }
 .cabecalho .menu {
     display: flex;
-    align-items: center; /*alinha os elementos no espaco total, no caso centro*/
-    height: 100%; /*altura*/
+    align-items: center; 
+    height: 100%; 
 }
 
 .cabecalho nav li a {
-    font-weight: bold; /*Mexer na fonte no caso grossura*/
+    font-weight: bold; 
     color: rgb(255, 255, 255);
-    font-size: 25px; /*Tamanho da fonte*/
-    padding: 10px 20px; /*espacamento do conteudo*/
-    border-radius: 50px; /*raio da borda, deixar elas arredondadas*/
-    transition: 0.2s; /*tempo de transicao para a animacao*/
+    font-size: 25px; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    transition: 0.2s; 
 } 
 
-.cabecalho nav li a:hover /*houver seria quando alguem passa o mouse em cima*/{ 
+.cabecalho nav li a:hover { 
     background-color: #d5011d;
 }
 
@@ -40,7 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 132px); /*calc ele consegue fazer a altura menos outra que voce seleciona*/
+    height: calc(100vh - 132px); 
     padding: 0 30px 30px;
 }
 
@@ -74,11 +74,11 @@ body {
 }
 
 .fundo-video {
-    position: absolute; /*ele posiciona o elemento idependente dos outros*/
-    z-index: -1; /*posicionar o elemento para tras*/
+    position: absolute; 
+    z-index: -1; 
     width: 100vw;
     height: 100vh;
-    overflow: hidden; /*esconde o transbordamento do elemento evita o scroll*/
+    overflow: hidden; 
     display: flex;
     justify-content: center;
 }
